@@ -1,1 +1,29 @@
+[16,21,11,8,12,22] 
+Birleştirme Sıralaması
 
+Yukarıdaki dizinin sıralama türüne göre aşamalarını yükseltir.
+Big-O gösterimini yapılandırmasını sağlar...
+
+//Merge Sort yönteminde dizide tek öğe kalacak şekilde sürekli iki bölünür.
+
+1- [16,21,11] - [8,12,22]
+
+2- [16] - [21,11] -- [8] - [12,22]
+
+3- [16] - [21] - [11] -- [8] - [12] - [22] //aynı maliyeti artık birleştirilir ve sıralanır.
+
+4- [16] - [11,21] -- [8] - [12,22]
+
+5- [11,16,21] -- [8,12,22] // birleştiriliyor sıralanıyor.
+
+6- [8,11,12,16,21,22]
+
+Zaman Karmaşıklığı:
+-Her seferinde bölerek bölerek işlem yapmak için 2^x = n yani logn=x anlamına gelir.
+-Bütün işlemler düşünüldüğünde Big-O gösterimi=O(nlogn)
+
+...
+...
+
+
+------------------------------
